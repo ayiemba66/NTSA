@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>M-Pesa Payment</title>
+
+  </head>
+  <body>
+    <h1>M-Pesa Payment Form</h1>
+    <h2>Input your mpesa pin to confirm the payment of ksh.650 to National Transport And Safety Authority as payment for the renewal of your Driving License</h2>
+    <form action="process_payment.php" method="POST">
+      <label for="mpesa_pin">M-Pesa PIN:</label>
+      <input type="password" id="mpesa_pin" name="mpesa_pin" required>
+      <br><br>
+      <input type="hidden" name="amount" value="650">
+     <button><a href="confirm.html">PAY NOW</a></button>
+    </form>
+  </body>
+  <style>
+    body {
+      background-color: #e1f5fe;
+    }
+    h1 {
+      color: green;
+    }
+    label {
+      color: green;
+    }
+    input[type="submit"] {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button{
+        background-color: mediumseagreen;
+        font-size: x-large;
+        font-weight: bold;
+    }
+  </style>
+</html>
